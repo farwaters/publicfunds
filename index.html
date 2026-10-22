@@ -59,6 +59,9 @@ tbody tr:last-child td{border-bottom:0}
 label{display:flex;flex-direction:column;font-size:.85rem;color:var(--muted);gap:.2rem}
 input,select,button{font:inherit;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:8px;padding:.45rem .6rem;min-height:2.5rem}
 button{cursor:pointer}button.primary{background:var(--brand);color:var(--brand-ink);border-color:var(--brand)}
+a.bot-go{display:inline-block;background:var(--brand);color:var(--brand-ink);text-decoration:none;border-radius:8px;padding:.5rem .85rem;font-weight:650}
+a.bot-go:hover{text-decoration:underline;text-underline-offset:3px}
+#take-bot{margin:1.4rem 0 0}#take-bot h2{margin-top:0}
 .btn-csv{font-size:.85rem;min-height:2.2rem}
 .heat{border-collapse:separate;border-spacing:2px;font-size:.8rem}.heat td,.heat th{border:0;padding:.15rem .3rem}
 .heat th[scope=row]{position:sticky;left:0;background:var(--card);z-index:1}.heat td.c{width:2.4rem;min-width:2rem;text-align:center;border-radius:4px;color:#fff;font-weight:700}
@@ -79,7 +82,7 @@ footer{max-width:1100px;margin:2rem auto 0;padding:1rem;color:var(--muted);font-
 details summary{cursor:pointer;font-weight:600}
 .skeleton{display:grid;gap:.45rem;margin:.8rem 0}.skeleton i{display:block;height:.85rem;border-radius:6px;background:var(--line)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
-@media print{header,nav,.tools,.btn-csv,footer{display:none}}
+@media print{header,nav,.tools,.btn-csv,footer,#take-bot{display:none}}
 </style>
 </head>
 <body>
@@ -105,9 +108,16 @@ details summary{cursor:pointer;font-weight:600}
   </div>
   <p class="small muted">Published 22 Oct 2026, 03:08 SAST. Tables fill in from that same file.</p>
   <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i></div>
-</div></main>
+</div>
+<section class="card" id="take-bot" aria-labelledby="take-bot-title">
+  <h2 id="take-bot-title">Take this bot further</h2>
+  <p>Start your own copy. Add the PublicFunds bot to Grok Bot and change it for the work you do. Your copy is yours. The figures on this site stay as they are.</p>
+  <p><a class="bot-go" href="https://x.ai/bot/7Hr1hnJPXqOQbMmUZ7mTi" rel="noopener">Start my own copy</a></p>
+  <p class="small muted">The next page is the template. Choose Add to Grok Bot. If you do not have the app yet, that page has the download. Nothing is installed from this site.</p>
+</section>
+</main>
 <footer><p id="foot">PublicFunds SA uses official open data from National Treasury, the Auditor-General (via Municipal Money), eTenders, the Department of Mineral and Petroleum Resources and Statistics South Africa (via the OECD). Indicators, not findings.</p>
-<p>Forum: <a href="https://test.grokforum.site/">test.grokforum.site</a> · Source: <a href="https://github.com/farwaters/publicfunds" rel="noopener">github.com/farwaters/publicfunds</a> · <a href="https://x.ai/bot/7Hr1hnJPXqOQbMmUZ7mTi" rel="noopener">Take the bot and adapt it</a> · <a href="/for-grok.txt">Collaborators</a></p>
+<p>Forum: <a href="https://test.grokforum.site/">test.grokforum.site</a> · Source: <a href="https://github.com/farwaters/publicfunds" rel="noopener">github.com/farwaters/publicfunds</a> · <a href="https://x.ai/bot/7Hr1hnJPXqOQbMmUZ7mTi" rel="noopener">Start my own copy of the bot</a> · <a href="/for-grok.txt">Collaborators</a></p>
 <p><a id="report" href="https://github.com/farwaters/publicfunds/issues/new?template=data-error.yml" rel="noopener nofollow" target="_blank">Report an error in the data or the site</a> · <a href="#/changes">What's new</a> · <a id="feedlink" href="public-data/v1/feed.json">Data feed (JSON Feed)</a></p></footer>
 <script>
 "use strict";
