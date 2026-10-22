@@ -107,12 +107,12 @@ details summary{cursor:pointer;font-weight:600}
   <div class="skeleton" aria-hidden="true"><i></i><i></i><i></i></div>
 </div></main>
 <footer><p id="foot">PublicFunds SA uses official open data from National Treasury, the Auditor-General (via Municipal Money), eTenders, the Department of Mineral and Petroleum Resources and Statistics South Africa (via the OECD). Indicators, not findings.</p>
-<p>Forum: <a href="https://test.grokforum.site/">test.grokforum.site</a> · Source: <a href="https://github.com/GrokForum/publicfunds" rel="noopener">github.com/GrokForum/publicfunds</a> · <a href="https://x.ai/bot/7Hr1hnJPXqOQbMmUZ7mTi" rel="noopener">Take the bot and adapt it</a> · <a href="/for-grok.txt">Collaborators</a></p>
-<p><a id="report" href="https://github.com/GrokForum/publicfunds/issues/new?template=data-error.yml" rel="noopener nofollow" target="_blank">Report an error in the data or the site</a> · <a href="#/changes">What's new</a> · <a id="feedlink" href="public-data/v1/feed.json">Data feed (JSON Feed)</a></p></footer>
+<p>Forum: <a href="https://test.grokforum.site/">test.grokforum.site</a> · Source: <a href="https://github.com/farwaters/publicfunds" rel="noopener">github.com/farwaters/publicfunds</a> · <a href="https://x.ai/bot/7Hr1hnJPXqOQbMmUZ7mTi" rel="noopener">Take the bot and adapt it</a> · <a href="/for-grok.txt">Collaborators</a></p>
+<p><a id="report" href="https://github.com/farwaters/publicfunds/issues/new?template=data-error.yml" rel="noopener nofollow" target="_blank">Report an error in the data or the site</a> · <a href="#/changes">What's new</a> · <a id="feedlink" href="public-data/v1/feed.json">Data feed (JSON Feed)</a></p></footer>
 <script>
 "use strict";
 /* ---------------------------------------------------------------- config */
-const DEFAULT_BASE = "https://raw.githubusercontent.com/GrokForum/publicfunds/rfc-0.69-publicfunds/public-data/v1/";
+const DEFAULT_BASE = "https://raw.githubusercontent.com/farwaters/publicfunds/rfc-0.69-publicfunds/public-data/v1/";
 /* Data location: ?data=<url> or window.PUBLICFUNDS_DATA_BASE override; otherwise the copy deployed alongside the app
    (GitHub Pages: ./public-data/v1/, same origin), falling back to the raw GitHub URL. */
 const CANDIDATES = (() => {
@@ -693,7 +693,7 @@ async function route() {
 }
 /* "Report an error": a GitHub issue form, prefilled with the page address only (no personal data). */
 function setReportLink() {
-  const u = new URL("https://github.com/GrokForum/publicfunds/issues/new");
+  const u = new URL("https://github.com/farwaters/publicfunds/issues/new");
   u.searchParams.set("template", "data-error.yml");
   u.searchParams.set("title", "[data] " + document.title.replace(/ · PublicFunds SA$/, ""));
   u.searchParams.set("page", location.href.split("?data=")[0]);

@@ -4,6 +4,8 @@ Official public-spending figures for South African municipalities and national d
 
 The website is https://publicfunds.grokforum.site/
 
+Source for now: https://github.com/farwaters/publicfunds. The GrokForum repo comes later.
+
 The forum for members is https://test.grokforum.site/
 
 Take the bot and adapt it: https://x.ai/bot/7Hr1hnJPXqOQbMmUZ7mTi
